@@ -1,0 +1,126 @@
+
+@media only screen and  (max-width: 400px) , (min-width: 200px)  {
+.container1,
+.flip-box1,
+.front1,
+.back1{
+  width: 380px;
+  height: 350px;
+}
+
+
+.container1,
+.flip_box1 {
+  position: relative;
+}
+
+.front1,
+.back1 {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.container1 {
+  -moz-transform: perspective(1200px);
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+}
+
+.flip_box1 {
+  transition: all 0.5s ease-out;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.front1 {
+  background-color: #024395;
+  background-image: url('https://img-fotki.yandex.ru/get/194550/29644339.5/0_d6c5f_c9f15850_orig');
+}
+
+.f_title1 {
+  padding-top: 30px;
+}
+
+.f_subline1 {
+  padding-top: 205px;
+  color: #B1D4E8;
+}
+
+.f_headline1 {
+  line-height: 23px;
+}
+
+.back1 {
+  background-color: #D21849;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.b_headline1 {
+  padding-top: 50px;
+}
+
+
+
+
+.flipped1 {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.r_wrap1 {
+  position: absolute;
+  right: 40px;
+  bottom: 38px;
+}
+
+.b_round1,
+.s_round1 {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #D21849;
+  transition: all 0.2s linear;
+}
+
+.b_round1 {
+  opacity: 0;
+  background-color: #D21849;
+}
+
+
+.b_round1_back1_hover {
+  background-color: #F60044;
+}
+
+.s_round1_click {
+  transform: scale(0.8);
+}
+
+.s_round1_back1 {
+  background-color: #C30C3D;
+}
+
+.s_arrow1 {
+  width: 52px;
+  height: 52px;
+  background-image: url('https://img-fotki.yandex.ru/get/194549/29644339.5/0_d6c60_1d7815f0_orig');
+  background-color: transparent;
+  transition: all 0.35s linear;
+}
+
+.s_arrow1_rotate {
+  transform: rotate(-180deg);
+}
+
+}
